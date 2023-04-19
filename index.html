@@ -270,8 +270,7 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form name="contact" method="POST" data-netlify="true" onsubmit="submit()" data-netlify-honeypot="bot-field" class="contact__form">
-                        <input class="d-none" name="bot-field">
+                    <form name="contact" method="POST" data-netlify="true" onsubmit="submit()" class="contact__form">
                         <input type="text"  name="name" id="name" placeholder="Name" class="contact__input" required>
                         <input type="mail" name="email" id="email" placeholder="Email" class="contact__input" required>
                         <textarea name="message" id="message" cols="0" rows="10" class="contact__input"></textarea>
@@ -301,10 +300,10 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
         <script>
-            function submit() {
-                alert("Your form is successfully submitted.");
-            }
-        </script>
+    function submit() {
+        alert("Your form is successfully submitted.");
+    }
+</script>
        
     </body>
 </html>
