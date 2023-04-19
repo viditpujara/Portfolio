@@ -270,10 +270,10 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
-                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
-                        <input type="mail" id="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="" id="message" cols="0" rows="10" class="contact__input"></textarea>
+                    <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="contact__form">
+                        <input type="text"  name="name" id="name" placeholder="Name" class="contact__input" required>
+                        <input type="mail" name="email" id="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" id="message" cols="0" rows="10" class="contact__input"></textarea>
                        
                         <button class="contact__button button" type="submit">Send</button>
                     </form>
