@@ -1,6 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -12,7 +11,7 @@
   --first-color:  #6fa8dc;
   --second-color: #fff;
   /*===== Fuente y tipografia =====*/
-  --body-font: "Rubik", sans-serif;
+  
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -47,7 +46,7 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
+  font-family: 'Geologica', sans-serif;
   font-size: var(--normal-font-size);
   color: var(--second-color);
   
@@ -118,7 +117,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: linear-gradient(to right, #000000, #00008B);
+  background-color:  linear-gradient(to right, #000000, #00008B);
   /* box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15); */
 }
 
@@ -139,7 +138,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: #000;
     transition: .5s;
   }
 }
@@ -369,7 +368,7 @@ section {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: linear-gradient(to right, #000000, #00008B);;
+  background-color: linear-gradient(to right, #000000, #00008B);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -557,7 +556,7 @@ div.cards {
   text-align: center;
 }
 div.card {
-  background: #000;
+  background:#6fa8dc;
   display: inline-block;
   margin: 8px;
   max-width: 300px;
@@ -569,15 +568,17 @@ div.card {
   z-index: 1;
 }
 div.card img {
+  height: 225px;
   max-width: 300px;
 }
+
 div.card .card__image-holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
 }
 div.card div.card-title {
-  background: #000;
+  background:#000;
   padding: 6px 15px 10px;
   position: relative;
   z-index: 0;
@@ -592,7 +593,7 @@ div.card div.card-title a.toggle-info {
   width: 32px;
 }
 div.card div.card-title a.toggle-info span {
-  background: #000;
+  background:#000;
   display: block;
   height: 2px;
   position: absolute;
@@ -672,7 +673,7 @@ div.card.show div.card-title a.toggle-info span.right {
   left: 10px;
 }
 div.card.show div.card-flap {
-  background: #000;
+  background:#000;
   transform: rotateX(0deg);
 }
 div.card.show div.flap1 {
